@@ -1,0 +1,16 @@
+.wp-block-quote {
+	margin-top: $space-6;
+	margin-bottom: $space-6;
+	border-color: color(primary);
+	
+	p {
+		margin-bottom: .5em;
+		font-size: 2rem;
+	}
+	
+	cite {
+		font-size: 80%;
+		font-weight: bold;
+	}
+
+}

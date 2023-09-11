@@ -1,0 +1,45 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+select,
+textarea {
+	color: color(body-main);
+	border-radius: 4px;
+	padding: $space-05;
+	width: 100%;
+	background-color: color(primary);
+	border: solid 1px color(primary);
+
+	&:focus {
+		color: color(primary)-dark;
+		border: solid 1px color(primary);
+	}
+
+	&.error {
+		border: 1px solid color(color-error);
+	}
+}
+
+span.error {
+	color: color(color-error);
+}
+
+input[type="submit"] {
+	font-size: 100%;
+}
+
+
+
+

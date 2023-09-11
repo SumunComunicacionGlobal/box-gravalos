@@ -1,0 +1,40 @@
+.is-style-card-link {
+    border: 1px solid color(primary-20);
+    padding: $space-2;
+    position: relative;
+
+    &:hover {
+        border: 1px solid color(primary);
+    }
+
+    &::after {
+        content: '';
+        background: url(./assets/icons/arrow-link.svg);
+        background-size: $space-3 $space-3;
+        width: $space-3;
+        height: $space-3;
+        position: absolute;
+        top: $space-1;
+        right: $space-1;
+        z-index: 0;
+    }
+
+    a {
+        color: initial;
+    }
+
+    a::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.wp-block-group.is-style-card:where(.has-background) {
+    padding: $space-6 $space-3;
+}

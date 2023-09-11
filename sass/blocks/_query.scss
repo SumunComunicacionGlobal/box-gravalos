@@ -1,0 +1,10 @@
+.wp-block-query {
+	
+	.wp-block-post-title a {
+		color: color(primary-80);
+
+		&:hover{
+			color: color(secondary);
+		}
+	}
+}

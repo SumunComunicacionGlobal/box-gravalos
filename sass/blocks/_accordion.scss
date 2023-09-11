@@ -1,0 +1,61 @@
+.accordion-block {
+	
+	.accordion-btn {
+		background-color: color(primary);
+		cursor: pointer;
+		width: 100%;
+		border: none;
+		border-radius: 0;
+		text-align: left;
+		outline: none;
+		transition: 0.4s;
+		justify-content: start;
+		padding: $space__unit $space-2;
+		position: relative;
+		margin-bottom: 1px;
+		color: color(body-main);
+
+		&:hover, .active & {
+			background-color: color(primary-40);
+			color: color(body-white);
+		}
+
+		h3 {
+			font-size: 1.25rem;
+			margin: 0;
+		}
+
+		span {
+			line-height: 1.8;
+		}
+		
+		& > div {
+			width: 72rem;
+			margin: 0 auto;
+		}
+
+		span:before {
+			content: '\002B';
+			color: color(body-white);
+			background-color: color(primary);
+			border-radius: 100%;
+			font-size: 1.25rem;
+			width: $space-4;
+			height: $space-4;
+			margin-right: $space-05;
+			float: left;
+			text-align: center;
+		}
+	}
+
+	.active span:before {
+		content: "\2212";
+		background-color: color(secondary);
+	}
+	
+	.panel {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+	}
+}
